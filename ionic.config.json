@@ -1,0 +1,7 @@
+{
+  "name": "GrillFood_APP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
