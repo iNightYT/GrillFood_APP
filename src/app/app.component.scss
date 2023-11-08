@@ -1,13 +1,7 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  --background: var(--ion-item-background, var(--ion-background-color, #3b3b3c));
 }
 
-ion-menu.md ion-content {
-  --padding-start: 8px;
-  --padding-end: 8px;
-  --padding-top: 20px;
-  --padding-bottom: 20px;
-}
 
 ion-menu.md ion-list {
   padding: 20px 0;
@@ -23,7 +17,8 @@ ion-menu.md ion-note {
 }
 
 ion-menu.md ion-list#inbox-list {
-  border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
+  background-color: #fe6b1a;
+  border-bottom: 1px solid var(--ion-color-step-150, #224996);
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header {
@@ -32,18 +27,21 @@ ion-menu.md ion-list#inbox-list ion-list-header {
 
   min-height: 20px;
 }
-
+ion-menu.md ion-list#labels-list {
+  background-color: #3b3b3c; /* Cambia #00ff00 al color que desees */
+}
 ion-menu.md ion-list#labels-list ion-list-header {
   font-size: 16px;
 
   margin-bottom: 18px;
 
-  color: #757575;
+  color: #3b3b3c;
 
   min-height: 26px;
 }
 
 ion-menu.md ion-item {
+  --background: #3b3b3c;
   --padding-start: 10px;
   --padding-end: 10px;
   border-radius: 4px;
@@ -58,53 +56,12 @@ ion-menu.md ion-item.selected ion-icon {
 }
 
 ion-menu.md ion-item ion-icon {
-  color: #616e7e;
+  color: rgb(255, 255, 255);
 }
 
 ion-menu.md ion-item ion-label {
   font-weight: 500;
-}
-
-ion-menu.ios ion-content {
-  --padding-bottom: 20px;
-}
-
-ion-menu.ios ion-list {
-  padding: 20px 0 0 0;
-}
-
-ion-menu.ios ion-note {
-  line-height: 24px;
-  margin-bottom: 20px;
-}
-
-ion-menu.ios ion-item {
-  --padding-start: 16px;
-  --padding-end: 16px;
-  --min-height: 50px;
-}
-
-ion-menu.ios ion-item.selected ion-icon {
-  color: var(--ion-color-primary);
-}
-
-ion-menu.ios ion-item ion-icon {
-  font-size: 24px;
-  color: #73849a;
-}
-
-ion-menu.ios ion-list#labels-list ion-list-header {
-  margin-bottom: 8px;
-}
-
-ion-menu.ios ion-list-header,
-ion-menu.ios ion-note {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-ion-menu.ios ion-note {
-  margin-bottom: 8px;
+  --color: #FFFFFF;
 }
 
 ion-note {
@@ -116,4 +73,11 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+#Logo{
+  width: 200px;
+  height: auto;
+  position: relative;
+  left: 15%;
 }
